@@ -6,7 +6,7 @@ const puppeteer = require('puppeteer');
   await page.goto('http://localhost:9500', {
     waitUntil: 'networkidle0',
   });
-  await page.pdf({path: 'hn.pdf', format: 'a4'});
+  await page.pdf({path: 'public/hn.pdf', format: 'a4'});
 
   await browser.close();
 })();
