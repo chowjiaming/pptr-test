@@ -14,7 +14,8 @@ export function App(): JSX.Element {
       <MarkupsBySeverity />
       <MarkupsByCategory />
       <InspectionSummary />
-      <MarkupsSummary />
+      <MarkupsSummary tableType="pages" />
+      <MarkupsSummary tableType="links" />
       <MarkupsDetails />
       <Summary />
     </>

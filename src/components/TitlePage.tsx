@@ -7,7 +7,7 @@ export function TitlePage(): JSX.Element {
   return (
     <>
       <TitleWrapper>
-        <h1 className="small-upper">Date of Issue {' '}</h1>
+        <h1 className="small-upper">Date of Issue </h1>
         <p className="small-upper grey">
           {new Date().toISOString().slice(0, 10)}
         </p>
@@ -34,7 +34,7 @@ export function TitlePage(): JSX.Element {
 
 const TitleWrapper = styled.div`
   display: flex;
-`
+`;
 const NameWrapper = styled.div`
   display: flex;
   justify-content: space-between;

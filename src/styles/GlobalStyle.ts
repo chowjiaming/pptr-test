@@ -109,4 +109,13 @@ export const GlobalStyle = createGlobalStyle`
   .small-upper.dark {
     color: ${({theme}) => theme.colours.mineShaft};
   }
+
+  .text-link {
+    color: ${({theme}) => theme.colours.royal};
+    font-weight: 700;
+
+    &:hover {
+      color: ${({theme}) => theme.colours.brand};
+    }
+  }
 `;

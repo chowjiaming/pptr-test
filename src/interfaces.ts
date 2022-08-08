@@ -21,11 +21,22 @@ export interface ImageData {
   imageLocation?: string;
 }
 
-export interface MarkupTableData {
-  compareBy: 'severity' | 'category';
+export interface CompareMarkupData {
+  tableType: 'severity' | 'category';
   tableMarkup: {
     severity: string;
     category: string;
     count: number;
+  }[];
+}
+
+export interface SummaryTableData {
+  tableType: 'pages' | 'links';
+  tableMarkup: {
+    pageNumber: number;
+    id: string;
+    category: string;
+    severity: string;
+    link: string;
   }[];
 }

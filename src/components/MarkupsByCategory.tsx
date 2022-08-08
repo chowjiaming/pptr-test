@@ -11,7 +11,7 @@ export function MarkupsByCategory(): JSX.Element {
       <h1>Markups by Category</h1>
       <HeadingBar />
       <MarkupImagePlaceholder />
-      <Table markupData={{compareBy: 'category', tableMarkup: data}} />
+      <Table compareMarkupData={{tableType: 'category', tableMarkup: data}} />
     </>
   );
 }

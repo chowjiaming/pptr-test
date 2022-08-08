@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 type Props = {
   titleData?: TitleData;
-  markupData?: MarkupData;
+  compareMarkupData?: MarkupData;
   imageData?: ImageData;
 };
 

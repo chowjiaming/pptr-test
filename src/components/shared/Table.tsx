@@ -1,25 +1,33 @@
 import React from 'react';
 import styled from 'styled-components';
-import {MarkupTableData} from '../../interfaces';
+import {CompareMarkupData, SummaryTableData} from '../../interfaces';
 
 type Props = {
-  markupData: MarkupTableData;
+  compareMarkupData?: CompareMarkupData;
+  summaryTableData?: SummaryTableData;
 };
 
-export function Table({markupData}: Props): JSX.Element {
-  return (
-    <>
+export function Table({
+  compareMarkupData,
+  summaryTableData,
+}: Props): JSX.Element {
+  if (compareMarkupData) {
+    return (
       <StyledTable>
         <thead>
           <tr>
             <StyledTh scope="col">
               <h3 className="small-upper grey">
-                {markupData.compareBy === 'severity' ? 'Severity' : 'Category'}
+                {compareMarkupData.tableType === 'severity'
+                  ? 'Severity'
+                  : 'Category'}
               </h3>
             </StyledTh>
             <StyledTh scope="col">
               <h3 className="small-upper grey">
-                {markupData.compareBy === 'severity' ? 'Category' : 'Severity'}
+                {compareMarkupData.tableType === 'severity'
+                  ? 'Category'
+                  : 'Severity'}
               </h3>
             </StyledTh>
             <StyledTh scope="col">
@@ -28,19 +36,19 @@ export function Table({markupData}: Props): JSX.Element {
           </tr>
         </thead>
         <tbody>
-          {markupData.tableMarkup.map((row, index) => {
+          {compareMarkupData.tableMarkup.map((row, index) => {
             return (
               <tr key={index}>
                 <StyledTd>
                   <p className="small-upper dark">
-                    {markupData.compareBy === 'severity'
+                    {compareMarkupData.tableType === 'severity'
                       ? row.severity
                       : row.category}
                   </p>
                 </StyledTd>
                 <StyledTd>
                   <p className="small-upper dark">
-                    {markupData.compareBy === 'severity'
+                    {compareMarkupData.tableType === 'severity'
                       ? row.category
                       : row.severity}
                   </p>
@@ -53,8 +61,79 @@ export function Table({markupData}: Props): JSX.Element {
           })}
         </tbody>
       </StyledTable>
-    </>
-  );
+    );
+  } else if (summaryTableData) {
+    return (
+      <StyledTable>
+        <thead>
+          <tr>
+            <StyledTh scope="col">
+              <h3 className="small-upper grey">
+                {summaryTableData.tableType === 'pages' ? 'Page No.' : 'ID.'}
+              </h3>
+            </StyledTh>
+            <StyledTh scope="col">
+              <h3 className="small-upper grey">
+                {summaryTableData.tableType === 'pages' ? 'ID.' : 'Category'}
+              </h3>
+            </StyledTh>
+            <StyledTh scope="col">
+              <h3 className="small-upper grey">
+                {summaryTableData.tableType === 'pages'
+                  ? 'Category'
+                  : 'Severity'}
+              </h3>
+            </StyledTh>
+            <StyledTh scope="col">
+              <h3 className="small-upper grey">
+                {summaryTableData.tableType === 'pages' ? 'Severity' : 'Links'}
+              </h3>
+            </StyledTh>
+          </tr>
+        </thead>
+        <tbody>
+          {summaryTableData.tableMarkup.map((row, index) => {
+            return (
+              <tr key={index}>
+                <StyledTd>
+                  <p className="small-upper dark">
+                    {summaryTableData.tableType === 'pages'
+                      ? row.pageNumber
+                      : row.id}
+                  </p>
+                </StyledTd>
+                <StyledTd>
+                  <p className="small-upper dark">
+                    {summaryTableData.tableType === 'pages'
+                      ? row.id
+                      : row.category}
+                  </p>
+                </StyledTd>
+                <StyledTd>
+                  <p className="small-upper dark">
+                    {summaryTableData.tableType === 'pages'
+                      ? row.category
+                      : row.severity}
+                  </p>
+                </StyledTd>
+                <StyledTd>
+                  {summaryTableData.tableType === 'pages' ? (
+                    <p className="small-upper dark">{row.severity}</p>
+                  ) : (
+                    <a className="text-link" href={row.link} target="_blank">
+                      {row.link}
+                    </a>
+                  )}
+                </StyledTd>
+              </tr>
+            );
+          })}
+        </tbody>
+      </StyledTable>
+    );
+  } else {
+    return <></>;
+  }
 }
 
 const StyledTable = styled.table`

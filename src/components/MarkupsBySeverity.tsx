@@ -11,7 +11,7 @@ export function MarkupsBySeverity(): JSX.Element {
       <h1>Markups by Severity</h1>
       <HeadingBar />
       <MarkupImagePlaceholder />
-      <Table markupData={{compareBy: 'severity', tableMarkup: data}} />
+      <Table compareMarkupData={{tableType: 'severity', tableMarkup: data}} />
     </>
   );
 }
