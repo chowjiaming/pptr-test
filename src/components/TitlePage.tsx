@@ -1,6 +1,7 @@
 import React from 'react';
 import {HeadingBar} from './shared/HeadingBar';
 import {Details} from './shared/Details';
+import {TitleImagePlaceholder} from '../styles/helpers';
 import styled from 'styled-components';
 
 export function TitlePage(): JSX.Element {
@@ -50,9 +51,9 @@ const TitleThumbnailPlaceholder = styled.div`
   height: 1in;
   background: ${({theme}) => theme.colours.midBlack};
 `;
-const TitleImagePlaceholder = styled.div`
-  width: 7.1in;
-  height: 7.1in;
-  margin: 0.2in 0;
-  background: ${({theme}) => theme.colours.midBlack};
-`;
+// const TitleImagePlaceholder = styled.div`
+//   width: 7.1in;
+//   height: 7.1in;
+//   margin: 0.2in 0;
+//   background: ${({theme}) => theme.colours.midBlack};
+// `;

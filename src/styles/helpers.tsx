@@ -5,3 +5,10 @@ export const MarkupImagePlaceholder = styled.div`
   height: 4.5in;
   background: ${({theme}) => theme.colours.midBlack};
 `;
+
+export const TitleImagePlaceholder = styled.div`
+  width: 7.1in;
+  height: 7.1in;
+  margin: 0.2in 0;
+  background: ${({theme}) => theme.colours.midBlack};
+`;
