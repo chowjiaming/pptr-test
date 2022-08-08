@@ -1,11 +1,10 @@
 import {createGlobalStyle} from 'styled-components';
-import {theme} from './theme';
 
 export const GlobalStyle = createGlobalStyle`
   @media print {
     @page {
       size: A4 portrait;
-      margin: 2cm;
+      margin: 0.5in;
     }
   }
   /* start new page at each h1 */
@@ -19,6 +18,14 @@ export const GlobalStyle = createGlobalStyle`
   h4,
   h5 {
     page-break-after: avoid;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    margin: 0.1in 0 0 0;
   }
   /* keep tables on one page */
   table,
@@ -36,9 +43,6 @@ export const GlobalStyle = createGlobalStyle`
     font-family: ${({theme}) => theme.fontFamilies.body};
     font-size: 1rem;
     line-height: 1.4em;
-  }
-  h1, h2, h3, h4, h5, h6, p {
-    margin: 0 0 5px;
   }
   img {
     max-width: 100%;
@@ -99,5 +103,7 @@ export const GlobalStyle = createGlobalStyle`
   .small-upper.light {
     color: ${({theme}) => theme.colours.heavyWhite};
   }
-
+  .small-upper.dark {
+    color: ${({theme}) => theme.colours.midBlack};
+  }
 `;
