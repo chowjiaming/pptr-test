@@ -213,7 +213,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var _src_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./src/App */ \"./src/App.tsx\");\n\n\n\n// import {Test} from './src/Test';\nreact_dom__WEBPACK_IMPORTED_MODULE_1__.render(react__WEBPACK_IMPORTED_MODULE_0__.createElement(_src_App__WEBPACK_IMPORTED_MODULE_2__.App, null), document.getElementById('root'));\n\n\n//# sourceURL=webpack://pptr-test/./index.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var _src_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./src/App */ \"./src/App.tsx\");\n/* harmony import */ var _src_styles_theme__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/styles/theme */ \"./src/styles/theme.ts\");\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n/* harmony import */ var _src_styles_GlobalStyle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./src/styles/GlobalStyle */ \"./src/styles/GlobalStyle.ts\");\n\n\n\n\n\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1__.render(react__WEBPACK_IMPORTED_MODULE_0__.createElement(styled_components__WEBPACK_IMPORTED_MODULE_5__.ThemeProvider, { theme: _src_styles_theme__WEBPACK_IMPORTED_MODULE_3__.theme },\n    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_src_styles_GlobalStyle__WEBPACK_IMPORTED_MODULE_4__.GlobalStyle, null),\n    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_src_App__WEBPACK_IMPORTED_MODULE_2__.App, null)), document.getElementById('root'));\n\n\n//# sourceURL=webpack://pptr-test/./index.tsx?");
 
 /***/ }),
 
@@ -224,7 +224,106 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"App\": () => (/* binding */ App)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\n\nfunction App() {\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(AppWrapper, null,\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, \"PPTR TEST\"),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, \"PPTR TEST\"),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, \"PPTR TEST\")));\n}\nconst AppWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__[\"default\"].div `\n  // @page {\n  //   size: A4 portrait;\n  //   margin: 2cm;\n  //   // h1 {\n  //   //   display: none;\n  //   // }\n  // }\n\n  // // @media page:right {\n  // //   @media bottom-right {\n  // //     content: counter(page);\n  // //   }\n  // // }\n\n  // // @media page:left {\n  // //   @media bottom-left {\n  // //     content: counter(page);\n  // //   }\n  // // }\n\n  // /* start new page at each h1 */\n  // h1 {\n  //   page-break-before: always;\n  // }\n\n  // /* avoid page break after subheading */\n  // h1,\n  // h2,\n  // h3,\n  // h4,\n  // h5 {\n  //   page-break-after: avoid;\n  // }\n\n  // /* keep tables on one page */\n  // table,\n  // figure {\n  //   page-break-inside: avoid;\n  // }\n`;\n\n\n//# sourceURL=webpack://pptr-test/./src/App.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"App\": () => (/* binding */ App)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _components_TitlePage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/TitlePage */ \"./src/components/TitlePage.tsx\");\n/* harmony import */ var _components_MarkupsBySeverity__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/MarkupsBySeverity */ \"./src/components/MarkupsBySeverity.tsx\");\n/* harmony import */ var _components_MarkupsByCategory__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/MarkupsByCategory */ \"./src/components/MarkupsByCategory.tsx\");\n/* harmony import */ var _components_InspectionSummary__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/InspectionSummary */ \"./src/components/InspectionSummary.tsx\");\n/* harmony import */ var _components_MarkupsSummary__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/MarkupsSummary */ \"./src/components/MarkupsSummary.tsx\");\n/* harmony import */ var _components_MarkupDetails__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/MarkupDetails */ \"./src/components/MarkupDetails.tsx\");\n/* harmony import */ var _components_Summary__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Summary */ \"./src/components/Summary.tsx\");\n\n\n\n\n\n\n\n\nfunction App() {\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_TitlePage__WEBPACK_IMPORTED_MODULE_1__.TitlePage, null),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_MarkupsBySeverity__WEBPACK_IMPORTED_MODULE_2__.MarkupsBySeverity, null),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_MarkupsByCategory__WEBPACK_IMPORTED_MODULE_3__.MarkupsByCategory, null),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_InspectionSummary__WEBPACK_IMPORTED_MODULE_4__.InspectionSummary, null),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_MarkupsSummary__WEBPACK_IMPORTED_MODULE_5__.MarkupsSummary, null),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_MarkupDetails__WEBPACK_IMPORTED_MODULE_6__.MarkupsDetails, null),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Summary__WEBPACK_IMPORTED_MODULE_7__.Summary, null)));\n}\n\n\n//# sourceURL=webpack://pptr-test/./src/App.tsx?");
+
+/***/ }),
+
+/***/ "./src/components/InspectionSummary.tsx":
+/*!**********************************************!*\
+  !*** ./src/components/InspectionSummary.tsx ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"InspectionSummary\": () => (/* binding */ InspectionSummary)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nfunction InspectionSummary() {\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, \"InspectionSummary\")));\n}\n\n\n//# sourceURL=webpack://pptr-test/./src/components/InspectionSummary.tsx?");
+
+/***/ }),
+
+/***/ "./src/components/MarkupDetails.tsx":
+/*!******************************************!*\
+  !*** ./src/components/MarkupDetails.tsx ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"MarkupsDetails\": () => (/* binding */ MarkupsDetails)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nfunction MarkupsDetails() {\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, \"Markups Details\")));\n}\n\n\n//# sourceURL=webpack://pptr-test/./src/components/MarkupDetails.tsx?");
+
+/***/ }),
+
+/***/ "./src/components/MarkupsByCategory.tsx":
+/*!**********************************************!*\
+  !*** ./src/components/MarkupsByCategory.tsx ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"MarkupsByCategory\": () => (/* binding */ MarkupsByCategory)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nfunction MarkupsByCategory() {\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, \"Markups by Category\")));\n}\n\n\n//# sourceURL=webpack://pptr-test/./src/components/MarkupsByCategory.tsx?");
+
+/***/ }),
+
+/***/ "./src/components/MarkupsBySeverity.tsx":
+/*!**********************************************!*\
+  !*** ./src/components/MarkupsBySeverity.tsx ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"MarkupsBySeverity\": () => (/* binding */ MarkupsBySeverity)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nfunction MarkupsBySeverity() {\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, \"Markups by Category\")));\n}\n\n\n//# sourceURL=webpack://pptr-test/./src/components/MarkupsBySeverity.tsx?");
+
+/***/ }),
+
+/***/ "./src/components/MarkupsSummary.tsx":
+/*!*******************************************!*\
+  !*** ./src/components/MarkupsSummary.tsx ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"MarkupsSummary\": () => (/* binding */ MarkupsSummary)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nfunction MarkupsSummary() {\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, \"Markups Summary\")));\n}\n\n\n//# sourceURL=webpack://pptr-test/./src/components/MarkupsSummary.tsx?");
+
+/***/ }),
+
+/***/ "./src/components/Summary.tsx":
+/*!************************************!*\
+  !*** ./src/components/Summary.tsx ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Summary\": () => (/* binding */ Summary)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nfunction Summary() {\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, \"Summary\")));\n}\n\n\n//# sourceURL=webpack://pptr-test/./src/components/Summary.tsx?");
+
+/***/ }),
+
+/***/ "./src/components/TitlePage.tsx":
+/*!**************************************!*\
+  !*** ./src/components/TitlePage.tsx ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"TitlePage\": () => (/* binding */ TitlePage)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nfunction TitlePage() {\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, \"Title Page\")));\n}\n\n\n//# sourceURL=webpack://pptr-test/./src/components/TitlePage.tsx?");
+
+/***/ }),
+
+/***/ "./src/styles/GlobalStyle.ts":
+/*!***********************************!*\
+  !*** ./src/styles/GlobalStyle.ts ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"GlobalStyle\": () => (/* binding */ GlobalStyle)\n/* harmony export */ });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./theme */ \"./src/styles/theme.ts\");\n\n\nconst GlobalStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__.createGlobalStyle `\n  @media print {\n    @page {\n      size: A4 portrait;\n      margin: 2cm;\n    }\n  }\n  /* start new page at each h1 */\n  h1 {\n    page-break-before: always;\n  }\n  /* avoid page break after subheading */\n  h1,\n  h2,\n  h3,\n  h4,\n  h5 {\n    page-break-after: avoid;\n  }\n  /* keep tables on one page */\n  table,\n  figure {\n    page-break-inside: avoid;\n  }\n\n  *, *::before, *::after { \n    box-sizing: border-box;\n  }\n\n  html {\n    font-weight:400;\n    color: ${_theme__WEBPACK_IMPORTED_MODULE_0__.theme.colours.mineShaft};\n    font-family: ${_theme__WEBPACK_IMPORTED_MODULE_0__.theme.fontFamilies.body};\n    font-size: 1rem;\n    line-height: 1.4em;\n  }\n  h1, h2, h3, h4, h5, h6, p {\n    margin: 0 0 5px;\n  }\n  img {\n    max-width: 100%;\n    vertical-align: bottom;\n  }\n  a {\n    color: inherit;\n    text-decoration: none;\n    -webkit-appearance: none;\n  }\n  input {\n    color: inherit;\n  }\n\n  .supertitle {\n    font-size: 2em;\n    line-height: 1.4em;\n    word-wrap: break-word;\n    word-break: break-word;\n    hyphens: all;\n  }\n  .headline {\n    font-weight: 700;\n    font-family: ${_theme__WEBPACK_IMPORTED_MODULE_0__.theme.fontFamilies.heading};\n    color: ${_theme__WEBPACK_IMPORTED_MODULE_0__.theme.colours.mineShaft};\n    font-size: 1.75rem;\n    line-height: 1.2em;\n  }\n  .subtitle {\n    font-weight: 700;\n    font-family: ${_theme__WEBPACK_IMPORTED_MODULE_0__.theme.fontFamilies.body};\n    color: ${_theme__WEBPACK_IMPORTED_MODULE_0__.theme.colours.mineShaft};\n    font-size: 1.4rem;\n    line-height: 1.4em;\n  }\n  .super-title {\n    font-weight: 700;\n    font-family: ${_theme__WEBPACK_IMPORTED_MODULE_0__.theme.fontFamilies.body};\n    color: ${_theme__WEBPACK_IMPORTED_MODULE_0__.theme.colours.mineShaft};\n    font-size: 4rem;\n    line-height: 1em;\n  }\n  .small-headline {\n    font-weight: 700;\n    font-family: ${_theme__WEBPACK_IMPORTED_MODULE_0__.theme.fontFamilies.body};\n    color: ${_theme__WEBPACK_IMPORTED_MODULE_0__.theme.colours.royal};\n    font-size: 1.4rem;\n    line-height: 1.4em;\n  }\n  .small-upper {\n    font-weight: 700;\n    font-family: ${_theme__WEBPACK_IMPORTED_MODULE_0__.theme.fontFamilies.body};\n    color: ${_theme__WEBPACK_IMPORTED_MODULE_0__.theme.colours.mineShaft};\n    font-size: 0.8rem;\n    line-height: 1.4em;\n    text-transform: uppercase;\n  }\n  .small-upper.light {\n    color: ${_theme__WEBPACK_IMPORTED_MODULE_0__.theme.colours.heavyWhite};\n  }\n\n`;\n\n\n//# sourceURL=webpack://pptr-test/./src/styles/GlobalStyle.ts?");
+
+/***/ }),
+
+/***/ "./src/styles/theme.ts":
+/*!*****************************!*\
+  !*** ./src/styles/theme.ts ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"theme\": () => (/* binding */ theme)\n/* harmony export */ });\nvar Colours;\n(function (Colours) {\n    Colours[\"brand\"] = \"hsl(189.1,100%,52%)\";\n    Colours[\"midnight\"] = \"#19233e\";\n    Colours[\"royal\"] = \"hsl(210, 92%, 42%)\";\n    Colours[\"royalLight\"] = \"hsl(210, 92%, 57%)\";\n    Colours[\"stop\"] = \"hsl(0, 79%, 58%)\";\n    Colours[\"stopLight\"] = \"hsl(0, 79%, 63%)\";\n    Colours[\"stopLow\"] = \"hsl(0, 79%, 63%,0.2)\";\n    Colours[\"apple\"] = \"hsl(145, 63%, 42%)\";\n    Colours[\"appleLight\"] = \"hsl(145, 63%, 47%)\";\n    Colours[\"carrot\"] = \"hsl(28, 80%, 47%)\";\n    Colours[\"carrotLight\"] = \"hsl(28, 80%, 57%)\";\n    Colours[\"sunflower\"] = \"hsl(48, 89%, 50%)\";\n    Colours[\"sunflowerLight\"] = \"hsl(48, 89%, 60%)\";\n    Colours[\"mineShaft\"] = \"#444444\";\n    Colours[\"dustyGrey\"] = \"#AAAAAA\";\n    Colours[\"aluminum\"] = \"hsl(0, 0%, 90%)\";\n    Colours[\"concrete\"] = \"#F5F5F5\";\n    Colours[\"midBlack\"] = \"hsla(0, 0%, 0%, 0.5)\";\n    Colours[\"heavyWhite\"] = \"hsla(0, 0%, 100%, 0.9)\";\n    Colours[\"midWhite\"] = \"hsla(0, 0%, 100%, 0.7)\";\n    Colours[\"lightWhite\"] = \"hsla(0, 0%, 100%, 0.3)\";\n    Colours[\"transparent\"] = \"transparent\";\n})(Colours || (Colours = {}));\nvar FontFamilies;\n(function (FontFamilies) {\n    FontFamilies[\"heading\"] = \"Lato, Helvetica, Arial, sans-serif\";\n    FontFamilies[\"body\"] = \"Heebo, Helvetica, Arial, sans-serif\";\n})(FontFamilies || (FontFamilies = {}));\nconst theme = {\n    fontFamilies: FontFamilies,\n    colours: Colours,\n    transition: '200ms ease',\n    boxShadows: [\n        '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',\n        '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)',\n        '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',\n        '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)',\n        '0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)',\n    ],\n    gradient: 'linear-gradient(90deg, #096bcf 0%, #0adaff 100%)',\n    gradientReverse: 'linear-gradient(270deg, #096bcf 0%, #0adaff 100%)',\n};\n\n\n//# sourceURL=webpack://pptr-test/./src/styles/theme.ts?");
 
 /***/ })
 

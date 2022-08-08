@@ -1,11 +1,22 @@
 import React from 'react';
+import {TitlePage} from './components/TitlePage';
+import {MarkupsBySeverity} from './components/MarkupsBySeverity';
+import {MarkupsByCategory} from './components/MarkupsByCategory';
+import {InspectionSummary} from './components/InspectionSummary';
+import {MarkupsSummary} from './components/MarkupsSummary';
+import {MarkupsDetails} from './components/MarkupDetails';
+import {Summary} from './components/Summary';
 
 export function App(): JSX.Element {
   return (
     <>
-      <h1>PPTR TEST</h1>
-      <h1>PPTR TEST</h1>
-      <h1>PPTR TEST</h1>
+      <TitlePage />
+      <MarkupsBySeverity />
+      <MarkupsByCategory />
+      <InspectionSummary />
+      <MarkupsSummary />
+      <MarkupsDetails />
+      <Summary />
     </>
   );
 }
