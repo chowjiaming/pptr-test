@@ -51,6 +51,6 @@ const TitleThumbnailPlaceholder = styled.div`
 const TitleImagePlaceholder = styled.div`
   width: 7.1in;
   height: 7.1in;
-  margin: 0.5in 0;
+  margin: 0.2in 0;
   background: ${({theme}) => theme.colours.midBlack};
 `;

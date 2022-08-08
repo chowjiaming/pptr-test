@@ -1,3 +1,5 @@
+import {ReactNode} from 'react';
+
 export interface TitleData {
   companyName: string;
   companyAddress: string;
@@ -17,4 +19,13 @@ export interface ImageData {
   imageName?: string;
   markupNumber?: number;
   imageLocation?: string;
+}
+
+export interface MarkupTableData {
+  compareBy: 'severity' | 'markup';
+  tableMarkup: {
+    severity: string;
+    category: string;
+    count: number;
+  }[];
 }
