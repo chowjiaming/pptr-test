@@ -6,20 +6,20 @@ import styled from 'styled-components';
 export function TitlePage(): JSX.Element {
   return (
     <>
-      <FlexWrapper>
-        <h1 className="small-upper">Date of Issue</h1>
-        <p className="small-upper dark">
+      <TitleWrapper>
+        <h1 className="small-upper">Date of Issue {' '}</h1>
+        <p className="small-upper grey">
           {new Date().toISOString().slice(0, 10)}
         </p>
-      </FlexWrapper>
+      </TitleWrapper>
       <HeadingBar className="inline-hr" />
-      <FlexWrapper>
-        <FlexWrapperInner>
+      <NameWrapper>
+        <NameWrapperInner>
           <h2>Inspection Report</h2>
           <h2>Title Insert Here &#40;Max. Word&#41;</h2>
-        </FlexWrapperInner>
+        </NameWrapperInner>
         <TitleThumbnailPlaceholder />
-      </FlexWrapper>
+      </NameWrapper>
       <TitleImagePlaceholder />
       <Details
         titleData={{
@@ -32,11 +32,14 @@ export function TitlePage(): JSX.Element {
   );
 }
 
-const FlexWrapper = styled.div`
+const TitleWrapper = styled.div`
+  display: flex;
+`
+const NameWrapper = styled.div`
   display: flex;
   justify-content: space-between;
 `;
-const FlexWrapperInner = styled.div`
+const NameWrapperInner = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,7 +50,6 @@ const TitleThumbnailPlaceholder = styled.div`
   height: 1in;
   background: ${({theme}) => theme.colours.midBlack};
 `;
-
 const TitleImagePlaceholder = styled.div`
   width: 7.1in;
   height: 7.1in;

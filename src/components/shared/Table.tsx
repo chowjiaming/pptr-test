@@ -12,28 +12,18 @@ export function Table({markupData}: Props): JSX.Element {
       <StyledTable>
         <thead>
           <tr>
-            {markupData.compareBy === 'severity' ? (
-              <>
-                <StyledTh scope="col">
-                  {' '}
-                  <h3 className="small-upper dark">Severity</h3>
-                </StyledTh>
-                <StyledTh scope="col">
-                  <h3 className="small-upper dark">Category</h3>
-                </StyledTh>
-              </>
-            ) : (
-              <>
-                <StyledTh scope="col">
-                  <h3 className="small-upper dark">Category</h3>
-                </StyledTh>
-                <StyledTh scope="col">
-                  <h3 className="small-upper dark">Severity</h3>
-                </StyledTh>
-              </>
-            )}
             <StyledTh scope="col">
-              <h3 className="small-upper dark">Count</h3>
+              <h3 className="small-upper grey">
+                {markupData.compareBy === 'severity' ? 'Severity' : 'Category'}
+              </h3>
+            </StyledTh>
+            <StyledTh scope="col">
+              <h3 className="small-upper grey">
+                {markupData.compareBy === 'severity' ? 'Category' : 'Severity'}
+              </h3>
+            </StyledTh>
+            <StyledTh scope="col">
+              <h3 className="small-upper grey">Count</h3>
             </StyledTh>
           </tr>
         </thead>
@@ -41,9 +31,23 @@ export function Table({markupData}: Props): JSX.Element {
           {markupData.tableMarkup.map((row, index) => {
             return (
               <tr key={index}>
-                <StyledTd>{row.severity}</StyledTd>
-                <StyledTd>{row.category}</StyledTd>
-                <StyledTd>{row.count}</StyledTd>
+                <StyledTd>
+                  <p className="small-upper dark">
+                    {markupData.compareBy === 'severity'
+                      ? row.severity
+                      : row.category}
+                  </p>
+                </StyledTd>
+                <StyledTd>
+                  <p className="small-upper dark">
+                    {markupData.compareBy === 'severity'
+                      ? row.category
+                      : row.severity}
+                  </p>
+                </StyledTd>
+                <StyledTd>
+                  <p className="small-upper dark">{row.count}</p>
+                </StyledTd>
               </tr>
             );
           })}

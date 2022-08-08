@@ -1,19 +1,9 @@
 import React from 'react';
 import {HeadingBar} from './shared/HeadingBar';
 import {Table} from './shared/Table';
-import styled from 'styled-components';
-
-const data = [
-  {severity: 'High', category: 'All', count: 2},
-  {severity: 'High', category: 'Corrosion', count: 2},
-  {severity: 'High', category: 'Improper Surface Finish', count: 2},
-  {severity: 'High', category: 'Mechanical Damage', count: 2},
-  {severity: 'High', category: 'Other', count: 2},
-  {severity: 'Medium', category: 'All', count: 2},
-  {severity: 'Low', category: 'All', count: 2},
-  {severity: 'Low', category: 'Corrosion', count: 2},
-  {severity: 'Low', category: 'Improper Surface Finish', count: 2},
-];
+import {data} from '../data/tableData';
+import {MarkupImagePlaceholder} from '../styles/helpers';
+// import styled from 'styled-components';
 
 export function MarkupsBySeverity(): JSX.Element {
   return (
@@ -25,9 +15,3 @@ export function MarkupsBySeverity(): JSX.Element {
     </>
   );
 }
-
-const MarkupImagePlaceholder = styled.div`
-  width: 7.1in;
-  height: 4.5in;
-  background: ${({theme}) => theme.colours.midBlack};
-`;

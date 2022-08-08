@@ -15,15 +15,15 @@ export function Details(props: Props): JSX.Element {
         <>
           <FlexWrapper>
             <h3 className="small-upper">Company Name: </h3>
-            <p className="small-upper dark">{props.titleData.companyName}</p>
+            <p className="small-upper grey">{props.titleData.companyName}</p>
           </FlexWrapper>
           <FlexWrapper>
             <h3 className="small-upper">Company Address: </h3>
-            <p className="small-upper dark">{props.titleData.companyAddress}</p>
+            <p className="small-upper grey">{props.titleData.companyAddress}</p>
           </FlexWrapper>
           <FlexWrapper>
             <h3 className="small-upper">Reviwed By: </h3>
-            <p className="small-upper dark">{props.titleData.reviewer}</p>
+            <p className="small-upper grey">{props.titleData.reviewer}</p>
           </FlexWrapper>
         </>
       )}

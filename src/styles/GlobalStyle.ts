@@ -103,7 +103,10 @@ export const GlobalStyle = createGlobalStyle`
   .small-upper.light {
     color: ${({theme}) => theme.colours.heavyWhite};
   }
-  .small-upper.dark {
+  .small-upper.grey {
     color: ${({theme}) => theme.colours.midBlack};
+  }
+  .small-upper.dark {
+    color: ${({theme}) => theme.colours.mineShaft};
   }
 `;

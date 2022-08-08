@@ -22,7 +22,7 @@ export interface ImageData {
 }
 
 export interface MarkupTableData {
-  compareBy: 'severity' | 'markup';
+  compareBy: 'severity' | 'category';
   tableMarkup: {
     severity: string;
     category: string;
