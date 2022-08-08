@@ -32,8 +32,8 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
     font-weight:400;
-    color: ${theme.colours.mineShaft};
-    font-family: ${theme.fontFamilies.body};
+    color: ${({theme}) => theme.colours.mineShaft};
+    font-family: ${({theme}) => theme.fontFamilies.body};
     font-size: 1rem;
     line-height: 1.4em;
   }
@@ -62,42 +62,42 @@ export const GlobalStyle = createGlobalStyle`
   }
   .headline {
     font-weight: 700;
-    font-family: ${theme.fontFamilies.heading};
-    color: ${theme.colours.mineShaft};
+    font-family: ${({theme}) => theme.fontFamilies.heading};
+    color: ${({theme}) => theme.colours.mineShaft};
     font-size: 1.75rem;
     line-height: 1.2em;
   }
   .subtitle {
     font-weight: 700;
-    font-family: ${theme.fontFamilies.body};
-    color: ${theme.colours.mineShaft};
+    font-family: ${({theme}) => theme.fontFamilies.body};
+    color: ${({theme}) => theme.colours.mineShaft};
     font-size: 1.4rem;
     line-height: 1.4em;
   }
   .super-title {
     font-weight: 700;
-    font-family: ${theme.fontFamilies.body};
-    color: ${theme.colours.mineShaft};
+    font-family: ${({theme}) => theme.fontFamilies.body};
+    color: ${({theme}) => theme.colours.mineShaft};
     font-size: 4rem;
     line-height: 1em;
   }
   .small-headline {
     font-weight: 700;
-    font-family: ${theme.fontFamilies.body};
-    color: ${theme.colours.royal};
+    font-family: ${({theme}) => theme.fontFamilies.body};
+    color: ${({theme}) => theme.colours.royal};
     font-size: 1.4rem;
     line-height: 1.4em;
   }
   .small-upper {
     font-weight: 700;
-    font-family: ${theme.fontFamilies.body};
-    color: ${theme.colours.mineShaft};
+    font-family: ${({theme}) => theme.fontFamilies.body};
+    color: ${({theme}) => theme.colours.mineShaft};
     font-size: 0.8rem;
     line-height: 1.4em;
     text-transform: uppercase;
   }
   .small-upper.light {
-    color: ${theme.colours.heavyWhite};
+    color: ${({theme}) => theme.colours.heavyWhite};
   }
 
 `;
