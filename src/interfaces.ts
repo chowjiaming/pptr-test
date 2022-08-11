@@ -7,12 +7,33 @@ export interface TitleData {
 }
 
 export interface MarkupData {
-  markupId?: string;
-  markupCategory?: string;
-  markupSeverity?: string;
-  markupFindings?: string;
+  id: string;
+  category: string;
+  severity: string;
+  findings?: string;
+  images?: string[];
   measurements?: string;
-  location?: string;
+  count?: number;
+  link?: string;
+}
+
+export interface MarkupDetail {
+  detailId: string;
+  detailName: string;
+  markupCount: number;
+  detailLocation: string;
+  detailImage: string;
+  markups?: {
+    markupId: string;
+    markupCategory?: string;
+    markupSeverity?: string;
+    markupFindings?: string;
+    markupImages?: string[];
+    markupMeasurementType?: string;
+    markupMeasurements?: string;
+    markupLocation?: string;
+    markupNotes?: string;
+  }[];
 }
 
 export interface ImageData {

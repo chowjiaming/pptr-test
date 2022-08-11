@@ -1,11 +1,12 @@
 import React from 'react';
-import {TitleData, MarkupData, ImageData} from '../../interfaces';
+import {TitleData, MarkupData, ImageData, MarkupDetail} from '../../interfaces';
 import styled from 'styled-components';
 
 type Props = {
   titleData?: TitleData;
   compareMarkupData?: MarkupData;
   imageData?: ImageData;
+  data?: MarkupDetail;
 };
 
 export function Details(props: Props): JSX.Element {
