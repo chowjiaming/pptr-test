@@ -1,26 +1,30 @@
 import React from 'react';
 import {HeadingBar} from './shared/HeadingBar';
 import {Details} from './shared/Details';
-import {LargeImagePlaceholder} from '../styles/helpers';
+import {
+  LargeImagePlaceholder,
+  ExtraSmallImagePlaceholder,
+  FlexWrapper,
+} from '../styles/helpers';
 import styled from 'styled-components';
 
 export function TitlePage(): JSX.Element {
   return (
     <>
-      <TitleWrapper>
+      <FlexWrapper.Row>
         <h1 className="small-upper">Date of Issue&nbsp;</h1>
         <p className="small-upper grey">
           {new Date().toISOString().slice(0, 10)}
         </p>
-      </TitleWrapper>
+      </FlexWrapper.Row>
       <HeadingBar className="inline-hr" />
-      <NameWrapper>
-        <NameWrapperInner>
+      <StyledFlexWrapperRow>
+        <StyledFlexWrapperColumn>
           <h2>Inspection Report</h2>
           <h2>Title Insert Here &#40;Max. Word&#41;</h2>
-        </NameWrapperInner>
-        <TitleThumbnailPlaceholder />
-      </NameWrapper>
+        </StyledFlexWrapperColumn>
+        <ExtraSmallImagePlaceholder />
+      </StyledFlexWrapperRow>
       <LargeImagePlaceholder />
       <Details
         details={[
@@ -33,27 +37,10 @@ export function TitlePage(): JSX.Element {
   );
 }
 
-const TitleWrapper = styled.div`
-  display: flex;
-`;
-const NameWrapper = styled.div`
-  display: flex;
+const StyledFlexWrapperRow = styled(FlexWrapper.Row)`
   justify-content: space-between;
 `;
-const NameWrapperInner = styled.div`
-  display: flex;
-  flex-direction: column;
+const StyledFlexWrapperColumn = styled(FlexWrapper.Column)`
   justify-content: center;
   line-height: 1.3;
 `;
-const TitleThumbnailPlaceholder = styled.div`
-  width: 1in;
-  height: 1in;
-  background: ${({theme}) => theme.colours.midBlack};
-`;
-// const LargeImagePlaceholder = styled.div`
-//   width: 7.1in;
-//   height: 7.1in;
-//   margin: 0.2in 0;
-//   background: ${({theme}) => theme.colours.midBlack};
-// `;
