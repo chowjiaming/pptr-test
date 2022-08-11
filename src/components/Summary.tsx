@@ -1,6 +1,6 @@
 import React from 'react';
 import {HeadingBar} from './shared/HeadingBar';
-import {TitleImagePlaceholder} from '../styles/helpers';
+import {LargeImagePlaceholder} from '../styles/helpers';
 import styled from 'styled-components';
 
 export function Summary(): JSX.Element {
@@ -14,7 +14,7 @@ export function Summary(): JSX.Element {
   );
 }
 
-const SummaryImagePlaceholder = styled(TitleImagePlaceholder)`
+const SummaryImagePlaceholder = styled(LargeImagePlaceholder)`
   width: 7.1in;
   height: 4.75in;
 `;

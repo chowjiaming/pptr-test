@@ -6,7 +6,7 @@ import {InspectionSummary} from './components/InspectionSummary';
 import {MarkupsSummary} from './components/MarkupsSummary';
 import {MarkupsDetails} from './components/MarkupDetails';
 import {Summary} from './components/Summary';
-import {data} from './data/markupDetailData';
+// import {data} from './data/markupDetailData';
 
 export function App(): JSX.Element {
   return (
@@ -17,7 +17,7 @@ export function App(): JSX.Element {
       <InspectionSummary />
       <MarkupsSummary tableType="pages" />
       <MarkupsSummary tableType="links" />
-      {/* <MarkupsDetails markups={data} /> */}
+      <MarkupsDetails />
       <Summary />
     </>
   );

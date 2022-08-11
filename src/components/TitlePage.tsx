@@ -1,14 +1,14 @@
 import React from 'react';
 import {HeadingBar} from './shared/HeadingBar';
 import {Details} from './shared/Details';
-import {TitleImagePlaceholder} from '../styles/helpers';
+import {LargeImagePlaceholder} from '../styles/helpers';
 import styled from 'styled-components';
 
 export function TitlePage(): JSX.Element {
   return (
     <>
       <TitleWrapper>
-        <h1 className="small-upper">Date of Issue </h1>
+        <h1 className="small-upper">Date of Issue&nbsp;</h1>
         <p className="small-upper grey">
           {new Date().toISOString().slice(0, 10)}
         </p>
@@ -21,7 +21,7 @@ export function TitlePage(): JSX.Element {
         </NameWrapperInner>
         <TitleThumbnailPlaceholder />
       </NameWrapper>
-      <TitleImagePlaceholder />
+      <LargeImagePlaceholder />
       <Details
         details={[
           {label: 'Company Name', value: 'input'},
@@ -51,7 +51,7 @@ const TitleThumbnailPlaceholder = styled.div`
   height: 1in;
   background: ${({theme}) => theme.colours.midBlack};
 `;
-// const TitleImagePlaceholder = styled.div`
+// const LargeImagePlaceholder = styled.div`
 //   width: 7.1in;
 //   height: 7.1in;
 //   margin: 0.2in 0;
