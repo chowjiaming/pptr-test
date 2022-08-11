@@ -17,7 +17,7 @@ export function App(): JSX.Element {
       <InspectionSummary />
       <MarkupsSummary tableType="pages" />
       <MarkupsSummary tableType="links" />
-      <MarkupsDetails markupDetail={data} />
+      {/* <MarkupsDetails markups={data} /> */}
       <Summary />
     </>
   );

@@ -12,3 +12,7 @@ export const TitleImagePlaceholder = styled.div`
   margin: 0.2in 0;
   background: ${({theme}) => theme.colours.midBlack};
 `;
+
+export const FlexWrapper = styled.div`
+  display: flex;
+`;

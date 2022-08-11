@@ -1,37 +1,22 @@
 import React from 'react';
-import {TitleData, MarkupData, ImageData, MarkupDetail} from '../../interfaces';
-import styled from 'styled-components';
+import {DetailProps} from '../../interfaces';
+import {FlexWrapper} from '../../styles/helpers';
 
 type Props = {
-  titleData?: TitleData;
-  compareMarkupData?: MarkupData;
-  imageData?: ImageData;
-  data?: MarkupDetail;
+  details: DetailProps[];
 };
 
-export function Details(props: Props): JSX.Element {
+export function Details({details}: Props): JSX.Element {
   return (
     <>
-      {props.titleData && (
-        <>
-          <FlexWrapper>
-            <h3 className="small-upper">Company Name: </h3>
-            <p className="small-upper grey">{props.titleData.companyName}</p>
+      {details.map((detail, i) => {
+        return (
+          <FlexWrapper key={i}>
+            <h3 className="small-upper">{detail.label + ':'}&nbsp;</h3>
+            <p className="small-upper grey">{detail.value}</p>
           </FlexWrapper>
-          <FlexWrapper>
-            <h3 className="small-upper">Company Address: </h3>
-            <p className="small-upper grey">{props.titleData.companyAddress}</p>
-          </FlexWrapper>
-          <FlexWrapper>
-            <h3 className="small-upper">Reviwed By: </h3>
-            <p className="small-upper grey">{props.titleData.reviewer}</p>
-          </FlexWrapper>
-        </>
-      )}
+        );
+      })}
     </>
   );
 }
-
-const FlexWrapper = styled.div`
-  display: flex;
-`;

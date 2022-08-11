@@ -23,11 +23,11 @@ export function TitlePage(): JSX.Element {
       </NameWrapper>
       <TitleImagePlaceholder />
       <Details
-        titleData={{
-          companyName: 'input',
-          companyAddress: 'input',
-          reviewer: 'first and last name',
-        }}
+        details={[
+          {label: 'Company Name', value: 'input'},
+          {label: 'Company Address', value: 'input'},
+          {label: 'Reviewer', value: 'First and Last Name'},
+        ]}
       />
     </>
   );

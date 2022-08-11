@@ -1,45 +1,24 @@
-import {ReactNode} from 'react';
-
-export interface TitleData {
-  companyName: string;
-  companyAddress: string;
-  reviewer: string;
+export interface DetailProps {
+  label: string;
+  value: string | string[];
 }
 
-export interface MarkupData {
-  id: string;
-  category: string;
-  severity: string;
-  findings?: string;
-  images?: string[];
-  measurements?: string;
-  count?: number;
-  link?: string;
+export interface MarkupDetails {
+  markupId: DetailProps;
+  markupCategory?: DetailProps;
+  markupSeverity?: DetailProps;
+  markupFindings?: DetailProps;
+  markupImages?: DetailProps;
+  markupMeasurementType?: DetailProps;
+  markupMeasurements?: DetailProps;
+  markupLocation?: DetailProps;
+  markupNotes?: DetailProps;
 }
 
-export interface MarkupDetail {
-  detailId: string;
-  detailName: string;
-  markupCount: number;
-  detailLocation: string;
-  detailImage: string;
-  markups?: {
-    markupId: string;
-    markupCategory?: string;
-    markupSeverity?: string;
-    markupFindings?: string;
-    markupImages?: string[];
-    markupMeasurementType?: string;
-    markupMeasurements?: string;
-    markupLocation?: string;
-    markupNotes?: string;
-  }[];
-}
-
-export interface ImageData {
-  imageName?: string;
-  markupNumber?: number;
-  imageLocation?: string;
+export interface Markups {
+  image: string;
+  details: DetailProps[];
+  markups: DetailProps[][];
 }
 
 export interface CompareMarkupData {

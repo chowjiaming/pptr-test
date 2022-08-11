@@ -1,112 +1,135 @@
 export const data = [
   {
-    detailId: (Math.random() + 1).toString(36).substring(7),
-    detailName: 'Markup 1',
-    markupCount: 7,
-    detailLocation: 'Location 1',
-    detailImage: 'https://via.placeholder.com/150',
+    image: 'https://via.placeholder.com/150',
+    details: [
+      {label: 'Image Name', value: 'input'},
+      {label: 'Number of Markups Included', value: 7},
+      {label: 'Image Location', value: 'location info + link'},
+    ],
     markups: [
-      {
-        markupId: (Math.random() + 1).toString(36).substring(7),
-        markupCategory: 'Corrosion',
-        markupSeverity: 'High',
-        markupFindings: 'Findings',
-        markupImages: ['https://via.placeholder.com/150'],
-      },
-      {
-        markupId: (Math.random() + 1).toString(36).substring(7),
-        markupCategory: 'Improper Surface Finishing',
-        markupSeverity: 'Medium',
-        markupMeasurements: 'Measurements',
-        markupFindings: 'Findings',
-        markupImages: ['https://via.placeholder.com/150'],
-        markupLocation: 'Location',
-      },
-      {
-        markupId: (Math.random() + 1).toString(36).substring(7),
-        markupCategory: 'Improper Surface Finishing',
-        markupSeverity: 'Medium',
-        markupMeasurements: 'Measurements',
-        markupFindings: 'Findings',
-        markupImages: ['https://via.placeholder.com/150'],
-        markupLocation: 'Location',
-      },
-      {
-        markupId: (Math.random() + 1).toString(36).substring(7),
-        markupMeasurementType: 'Measurement Type',
-        markupMeasurements: 'Measurements',
-        markupNotes: 'Notes',
-      },
-      {
-        markupId: (Math.random() + 1).toString(36).substring(7),
-        markupCategory: 'Corrosion',
-        markupSeverity: 'High',
-        markupFindings: 'Findings',
-        markupImages: ['https://via.placeholder.com/150'],
-      },
-      {
-        markupId: (Math.random() + 1).toString(36).substring(7),
-        markupCategory: 'Improper Surface Finishing',
-        markupSeverity: 'Medium',
-        markupMeasurements: 'Measurements',
-        markupFindings: 'Findings',
-        markupImages: ['https://via.placeholder.com/150'],
-        markupLocation: 'Location',
-      },
-      {
-        markupId: (Math.random() + 1).toString(36).substring(7),
-        markupCategory: 'Improper Surface Finishing',
-        markupSeverity: 'Medium',
-        markupMeasurements: 'Measurements',
-        markupFindings: 'Findings',
-        markupImages: ['https://via.placeholder.com/150'],
-      },
-      {
-        markupId: (Math.random() + 1).toString(36).substring(7),
-        markupCategory: 'Improper Surface Finishing',
-        markupSeverity: 'Medium',
-        markupMeasurements: 'Measurements',
-        markupFindings: 'Findings',
-        markupImages: ['https://via.placeholder.com/150'],
-        markupLocation: 'Location',
-      },
+      [
+        {
+          label: 'Markup ID',
+          value: (Math.random() + 1).toString(36).substring(7),
+        },
+        {label: 'Category', value: 'Corrosion'},
+        {label: 'Severity', value: 'High'},
+        {label: 'Findings', value: 'Findings 1'},
+        {
+          label: 'Image',
+          value: ['https://via.placeholder.com/150'],
+        },
+      ],
+      [
+        {
+          label: 'Markup ID',
+          value: (Math.random() + 1).toString(36).substring(7),
+        },
+        {label: 'Category', value: 'Corrosion'},
+        {label: 'Severity', value: 'High'},
+        {label: 'Findings', value: 'Findings 1'},
+        {
+          label: 'Image',
+          value: ['https://via.placeholder.com/150'],
+        },
+      ],
+      [
+        {
+          label: 'Markup ID',
+          value: (Math.random() + 1).toString(36).substring(7),
+        },
+        {label: 'Category', value: 'Corrosion'},
+        {label: 'Severity', value: 'High'},
+        {label: 'Findings', value: 'Findings 1'},
+        {
+          label: 'Image',
+          value: ['https://via.placeholder.com/150'],
+        },
+      ],
+      [
+        {
+          label: 'Markup ID',
+          value: (Math.random() + 1).toString(36).substring(7),
+        },
+        {label: 'Category', value: 'Corrosion'},
+        {label: 'Severity', value: 'High'},
+        {label: 'Findings', value: 'Findings 1'},
+        {
+          label: 'Image',
+          value: ['https://via.placeholder.com/150'],
+        },
+      ],
+      [
+        {
+          label: 'Markup ID',
+          value: (Math.random() + 1).toString(36).substring(7),
+        },
+        {label: 'Category', value: 'Corrosion'},
+        {label: 'Severity', value: 'High'},
+        {label: 'Findings', value: 'Findings 1'},
+        {
+          label: 'Image',
+          value: ['https://via.placeholder.com/150'],
+        },
+      ],
+      [
+        {
+          label: 'Markup ID',
+          value: (Math.random() + 1).toString(36).substring(7),
+        },
+        {label: 'Category', value: 'Corrosion'},
+        {label: 'Severity', value: 'High'},
+        {label: 'Findings', value: 'Findings 1'},
+        {
+          label: 'Image',
+          value: ['https://via.placeholder.com/150'],
+        },
+      ],
+      [
+        {
+          label: 'Markup ID',
+          value: (Math.random() + 1).toString(36).substring(7),
+        },
+        {label: 'Category', value: 'Corrosion'},
+        {label: 'Severity', value: 'High'},
+        {label: 'Findings', value: 'Findings 1'},
+        {
+          label: 'Image',
+          value: ['https://via.placeholder.com/150'],
+        },
+      ],
     ],
   },
   {
-    detailId: (Math.random() + 1).toString(36).substring(7),
-    detailName: 'Markup 2',
-    markupCount: 2,
-    detailLocation: 'Location 2',
-    detailImage: 'https://via.placeholder.com/150',
+    image: 'https://via.placeholder.com/150',
+    details: [
+      {label: 'Image Name', value: 'input'},
+      {label: 'Number of Markups Included', value: 1},
+      {label: 'Image Location', value: 'location info + link'},
+    ],
     markups: [
-      {
-        markupId: (Math.random() + 1).toString(36).substring(7),
-        markupCategory: 'Improper Surface Finishing',
-        markupSeverity: 'Medium',
-        markupMeasurements: 'Measurements',
-        markupFindings: 'Findings',
-        markupImages: [
-          'https://via.placeholder.com/150',
-          'https://via.placeholder.com/150',
-        ],
-      },
+      [
+        {
+          label: 'Markup ID',
+          value: (Math.random() + 1).toString(36).substring(7),
+        },
+        {label: 'Category', value: 'Corrosion'},
+        {label: 'Severity', value: 'High'},
+        {label: 'Findings', value: 'Findings 1'},
+        {
+          label: 'Image',
+          value: ['https://via.placeholder.com/150'],
+        },
+      ],
     ],
   },
   {
-    detailId: (Math.random() + 1).toString(36).substring(7),
-    detailName: 'Markup 2',
-    markupCount: 2,
-    detailLocation: 'Location 2',
-    detailImage: 'https://via.placeholder.com/150',
-    markups: [
-      {
-        markupId: (Math.random() + 1).toString(36).substring(7),
-        markupCategory: 'Improper Surface Finishing',
-        markupSeverity: 'Medium',
-        markupMeasurements: 'Measurements',
-        markupFindings: 'Findings',
-        markupImages: [],
-      },
+    image: 'https://via.placeholder.com/150',
+    details: [
+      {label: 'Image Name', value: 'input'},
+      {label: 'Number of Markups Included', value: 7},
+      {label: 'Image Location', value: 'location info + link'},
     ],
+    markups: [[]],
   },
 ];
