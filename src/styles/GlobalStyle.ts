@@ -41,7 +41,7 @@ export const GlobalStyle = createGlobalStyle`
     font-weight:400;
     color: ${({theme}) => theme.colours.mineShaft};
     font-family: ${({theme}) => theme.fontFamilies.body};
-    font-size: 1rem;
+    font-size: .16667in;
     line-height: 1.4em;
   }
   img {
@@ -97,7 +97,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: ${({theme}) => theme.fontFamilies.body};
     color: ${({theme}) => theme.colours.mineShaft};
     font-size: 0.8rem;
-    line-height: 1.4em;
+    line-height: 1.4rem;
     text-transform: uppercase;
   }
   .small-upper.light {

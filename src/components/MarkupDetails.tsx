@@ -16,7 +16,7 @@ import styled from 'styled-components';
 export function MarkupsDetails(): JSX.Element {
   return (
     <>
-      <h1>Markups Details</h1>
+      <h1 id="markup-details">Markups Details</h1>
       <HeadingBar />
       <Details
         details={[

@@ -6,7 +6,7 @@ import styled from 'styled-components';
 export function Summary(): JSX.Element {
   return (
     <>
-      <h1>Summary</h1>
+      <h1 id="summary">Summary</h1>
       <HeadingBar />
       <SummaryImagePlaceholder />
       <SummaryImagePlaceholder />

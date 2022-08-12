@@ -8,7 +8,7 @@ import {MediumImagePlaceholder} from '../styles/helpers';
 export function MarkupsByCategory(): JSX.Element {
   return (
     <>
-      <h1>Markups by Category</h1>
+      <h1 id="markups-by-category">Markups by Category</h1>
       <HeadingBar />
       <MediumImagePlaceholder />
       <Table compareMarkupData={{tableType: 'category', tableMarkup: data}} />

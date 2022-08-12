@@ -8,7 +8,7 @@ import {MediumImagePlaceholder} from '../styles/helpers';
 export function MarkupsBySeverity(): JSX.Element {
   return (
     <>
-      <h1>Markups by Severity</h1>
+      <h1 id="markups-by-severity">Markups by Severity</h1>
       <HeadingBar />
       <MediumImagePlaceholder />
       <Table compareMarkupData={{tableType: 'severity', tableMarkup: data}} />

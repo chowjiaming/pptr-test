@@ -12,7 +12,9 @@ export function TitlePage(): JSX.Element {
   return (
     <>
       <FlexWrapper.Row>
-        <h1 className="small-upper">Date of Issue&nbsp;</h1>
+        <h1 id="title-page" className="small-upper">
+          Date of Issue&nbsp;
+        </h1>
         <p className="small-upper grey">
           {new Date().toISOString().slice(0, 10)}
         </p>

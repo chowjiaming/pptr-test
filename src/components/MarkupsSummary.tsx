@@ -12,7 +12,7 @@ type Props = {
 export function MarkupsSummary({tableType}: Props): JSX.Element {
   return (
     <>
-      <h1>Markup Summary</h1>
+      <h1 id="markup-summary">Markup Summary</h1>
       <HeadingBar />
       <MediumImagePlaceholder />
       <Table summaryTableData={{tableType, tableMarkup: data}} />

@@ -5,7 +5,7 @@ import {MediumImagePlaceholder} from '../styles/helpers';
 export function InspectionSummary(): JSX.Element {
   return (
     <>
-      <h1>InspectionSummary</h1>
+      <h1 id="inspection-summary">InspectionSummary</h1>
       <HeadingBar />
       <MediumImagePlaceholder />
       <h2 className="small-upper grey">

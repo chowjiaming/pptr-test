@@ -17,21 +17,21 @@ export function Table({
         <thead>
           <tr>
             <StyledTh scope="col">
-              <h3 className="small-upper grey">
+              <h3 className="small-upper dark">
                 {compareMarkupData.tableType === 'severity'
                   ? 'Severity'
                   : 'Category'}
               </h3>
             </StyledTh>
             <StyledTh scope="col">
-              <h3 className="small-upper grey">
+              <h3 className="small-upper dark">
                 {compareMarkupData.tableType === 'severity'
                   ? 'Category'
                   : 'Severity'}
               </h3>
             </StyledTh>
             <StyledTh scope="col">
-              <h3 className="small-upper grey">Count</h3>
+              <h3 className="small-upper dark">Count</h3>
             </StyledTh>
           </tr>
         </thead>
@@ -40,21 +40,21 @@ export function Table({
             return (
               <tr key={index}>
                 <StyledTd>
-                  <p className="small-upper dark">
+                  <p className="small-upper grey">
                     {compareMarkupData.tableType === 'severity'
                       ? row.severity
                       : row.category}
                   </p>
                 </StyledTd>
                 <StyledTd>
-                  <p className="small-upper dark">
+                  <p className="small-upper grey">
                     {compareMarkupData.tableType === 'severity'
                       ? row.category
                       : row.severity}
                   </p>
                 </StyledTd>
                 <StyledTd>
-                  <p className="small-upper dark">{row.count}</p>
+                  <p className="small-upper grey">{row.count}</p>
                 </StyledTd>
               </tr>
             );
@@ -68,24 +68,24 @@ export function Table({
         <thead>
           <tr>
             <StyledTh scope="col">
-              <h3 className="small-upper grey">
+              <h3 className="small-upper dark">
                 {summaryTableData.tableType === 'pages' ? 'Page No.' : 'ID.'}
               </h3>
             </StyledTh>
             <StyledTh scope="col">
-              <h3 className="small-upper grey">
+              <h3 className="small-upper dark">
                 {summaryTableData.tableType === 'pages' ? 'ID.' : 'Category'}
               </h3>
             </StyledTh>
             <StyledTh scope="col">
-              <h3 className="small-upper grey">
+              <h3 className="small-upper dark">
                 {summaryTableData.tableType === 'pages'
                   ? 'Category'
                   : 'Severity'}
               </h3>
             </StyledTh>
             <StyledTh scope="col">
-              <h3 className="small-upper grey">
+              <h3 className="small-upper dark">
                 {summaryTableData.tableType === 'pages' ? 'Severity' : 'Links'}
               </h3>
             </StyledTh>
@@ -96,21 +96,23 @@ export function Table({
             return (
               <tr key={index}>
                 <StyledTd>
-                  <p className="small-upper dark">
-                    {summaryTableData.tableType === 'pages'
-                      ? row.pageNumber
-                      : row.id}
-                  </p>
+                  <a href="#markups-by-severity">
+                    <p className="small-upper grey">
+                      {summaryTableData.tableType === 'pages'
+                        ? row.pageNumber
+                        : row.id}
+                    </p>
+                  </a>
                 </StyledTd>
                 <StyledTd>
-                  <p className="small-upper dark">
+                  <p className="small-upper grey">
                     {summaryTableData.tableType === 'pages'
                       ? row.id
                       : row.category}
                   </p>
                 </StyledTd>
                 <StyledTd>
-                  <p className="small-upper dark">
+                  <p className="small-upper grey">
                     {summaryTableData.tableType === 'pages'
                       ? row.category
                       : row.severity}
@@ -118,7 +120,7 @@ export function Table({
                 </StyledTd>
                 <StyledTd>
                   {summaryTableData.tableType === 'pages' ? (
-                    <p className="small-upper dark">{row.severity}</p>
+                    <p className="small-upper grey">{row.severity}</p>
                   ) : (
                     <a className="text-link" href={row.link} target="_blank">
                       {row.link}
