@@ -2,7 +2,7 @@ import React from 'react';
 import {HeadingBar} from '../Components/HeadingBar';
 import {Table} from '../Components/Table';
 import {data} from '../data/summaryTableData';
-import {MediumImagePlaceholder} from '../styles/helpers';
+import {MediumImagePlaceholder} from '../Components/helpers';
 // import styled from 'styled-components';
 
 type Props = {

@@ -5,7 +5,7 @@ import {
   FlexWrapper,
   MediumImagePlaceholder,
   SmallImagePlaceholder,
-} from '../styles/helpers';
+} from '../Components/helpers';
 import styled from 'styled-components';
 // import {Markups} from '../interfaces';
 

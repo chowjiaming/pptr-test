@@ -5,7 +5,7 @@ import {
   LargeImagePlaceholder,
   ExtraSmallImagePlaceholder,
   FlexWrapper,
-} from '../styles/helpers';
+} from '../Components/helpers';
 import styled from 'styled-components';
 
 export function TitlePage(): JSX.Element {

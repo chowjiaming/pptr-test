@@ -1,6 +1,6 @@
 import React from 'react';
 import {DetailProps} from '../interfaces';
-import {FlexWrapper} from '../styles/helpers';
+import {FlexWrapper} from './helpers';
 import styled from 'styled-components';
 
 type Props = {

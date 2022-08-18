@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer');
-const pageURL = 'http://localhost:9500';
+const pageURL = 'http://localhost:3400';
 
 const optionsPDF = {
   path: 'public/report.pdf',

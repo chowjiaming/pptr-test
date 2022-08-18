@@ -1,6 +1,6 @@
 import React from 'react';
 import {HeadingBar} from '../Components/HeadingBar';
-import {LargeImagePlaceholder} from '../styles/helpers';
+import {LargeImagePlaceholder} from '../Components/helpers';
 import styled from 'styled-components';
 
 export function Summary(): JSX.Element {
