@@ -1,5 +1,5 @@
 import React from 'react';
-import {HeadingBar} from './shared/HeadingBar';
+import {HeadingBar} from '../Components/HeadingBar';
 import {MediumImagePlaceholder} from '../styles/helpers';
 
 export function InspectionSummary(): JSX.Element {

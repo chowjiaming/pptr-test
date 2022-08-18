@@ -1,5 +1,5 @@
 import React from 'react';
-import {HeadingBar} from './shared/HeadingBar';
+import {HeadingBar} from '../Components/HeadingBar';
 import {LargeImagePlaceholder} from '../styles/helpers';
 import styled from 'styled-components';
 

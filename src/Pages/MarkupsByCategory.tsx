@@ -1,6 +1,6 @@
 import React from 'react';
-import {HeadingBar} from './shared/HeadingBar';
-import {Table} from './shared/Table';
+import {HeadingBar} from '../Components/HeadingBar';
+import {Table} from '../Components/Table';
 import {data} from '../data/tableData';
 import {MediumImagePlaceholder} from '../styles/helpers';
 // import styled from 'styled-components';

@@ -1,6 +1,6 @@
 import React from 'react';
-import {HeadingBar} from './shared/HeadingBar';
-import {Details} from './shared/Details';
+import {HeadingBar} from '../Components/HeadingBar';
+import {Details} from '../Components/Details';
 import {
   LargeImagePlaceholder,
   ExtraSmallImagePlaceholder,

@@ -1,11 +1,11 @@
 import React from 'react';
-import {TitlePage} from './components/TitlePage';
-import {MarkupsBySeverity} from './components/MarkupsBySeverity';
-import {MarkupsByCategory} from './components/MarkupsByCategory';
-import {InspectionSummary} from './components/InspectionSummary';
-import {MarkupsSummary} from './components/MarkupsSummary';
-import {MarkupsDetails} from './components/MarkupDetails';
-import {Summary} from './components/Summary';
+import {TitlePage} from './Pages/TitlePage';
+import {MarkupsBySeverity} from './Pages/MarkupsBySeverity';
+import {MarkupsByCategory} from './Pages/MarkupsByCategory';
+import {InspectionSummary} from './Pages/InspectionSummary';
+import {MarkupsSummary} from './Pages/MarkupsSummary';
+import {MarkupsDetails} from './Pages/MarkupDetails';
+import {Summary} from './Pages/Summary';
 // import {data} from './data/markupDetailData';
 
 export function App(): JSX.Element {

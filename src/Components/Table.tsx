@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {CompareMarkupData, SummaryTableData} from '../../interfaces';
+import {CompareMarkupData, SummaryTableData} from '../interfaces';
 
 type Props = {
   compareMarkupData?: CompareMarkupData;
